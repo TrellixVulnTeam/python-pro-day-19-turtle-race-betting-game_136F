@@ -19,3 +19,10 @@ orange_turtle.color("orange")
 green_turtle.color("green")
 
 turtles = [red_turtle, blue_turtle, purple_turtle, orange_turtle, green_turtle]
+
+y = 100
+for each_turtle in turtles:
+    each_turtle.penup()
+    each_turtle.shape("turtle")
+    each_turtle.setposition(-400, y)
+    y -= 50
