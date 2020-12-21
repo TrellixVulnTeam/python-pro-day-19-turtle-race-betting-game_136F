@@ -1,28 +1,14 @@
 import turtle
 
-red_turtle = turtle.Turtle()
-blue_turtle = turtle.Turtle()
-purple_turtle = turtle.Turtle()
-orange_turtle = turtle.Turtle()
-green_turtle = turtle.Turtle()
-
-red_turtle.name = "Red"
-blue_turtle.name="Blue"
-purple_turtle.name = "Purple"
-orange_turtle.name = "Orange"
-green_turtle.name = "Green"
-
-red_turtle.color("red")
-blue_turtle.color("blue")
-purple_turtle.color("purple")
-orange_turtle.color("orange")
-green_turtle.color("green")
-
-turtles = [red_turtle, blue_turtle, purple_turtle, orange_turtle, green_turtle]
-
+colors = ["red", "orange", "yellow", "green", "indigo", "purple"]
+turtles = []
 y = 100
-for each_turtle in turtles:
-    each_turtle.penup()
-    each_turtle.shape("turtle")
-    each_turtle.setposition(-400, y)
+for each_color in colors:
+    new_turtle = turtle.Turtle(shape="turtle")
+    new_turtle.color(each_color)
+    new_turtle.name = each_color
+    new_turtle.penup()
+    new_turtle.goto(-400, y)
     y -= 50
+    turtles.append(new_turtle)
+
