@@ -1,4 +1,5 @@
-from turtle import Screen
+from turtle import Screen, Turtle
 
 screen = Screen()
-screen.setup(width=550, height=400)
+screen.setup(width=500, height=400)
+
