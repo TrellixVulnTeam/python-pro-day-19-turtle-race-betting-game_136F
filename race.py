@@ -3,8 +3,7 @@ import random
 
 def race(turtles):
     """Takes in turtles, race turtles and returns winner"""
-    won = False
-    while not won:
+    while True:
         for turtle in turtles:
             distance = random.randint(0, 10)
             turtle.forward(distance)
