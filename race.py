@@ -7,5 +7,5 @@ def race(turtles):
         for turtle in turtles:
             distance = random.randint(0, 10)
             turtle.forward(distance)
-            if turtle.xcor() >= 230:
+            if turtle.xcor() >= 255:
                 return turtle.pencolor()
