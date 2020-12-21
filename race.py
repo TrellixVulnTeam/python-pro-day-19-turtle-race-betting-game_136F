@@ -6,8 +6,9 @@ def race(turtles):
     won = False
     while not won:
         racer = random.choice(turtles)
-        racer.forward(10)
-        if racer.xcor() >= 400:
+        racer.forward(5)
+        print(racer.xcor())
+        if racer.xcor() >= 275:
             won = True
             winner = racer
             return winner

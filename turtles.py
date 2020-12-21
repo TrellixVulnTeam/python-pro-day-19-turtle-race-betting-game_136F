@@ -8,7 +8,7 @@ for each_color in colors:
     new_turtle.color(each_color)
     new_turtle.name = each_color
     new_turtle.penup()
-    new_turtle.goto(-400, y)
-    y -= 50
+    new_turtle.goto(-230, y)
+    y -= 30
     turtles.append(new_turtle)
 
